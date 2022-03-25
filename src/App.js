@@ -4,7 +4,11 @@ import Products from './Components/Products/Products';
 
 function App() {
   return (
-    <div className="App">
+    <div >
+      <div className="App">
+        <h1>Confused Buyer</h1>
+        <h3>Choose 5 Laptop</h3>
+      </div>
       <Products></Products>
     </div>
   );

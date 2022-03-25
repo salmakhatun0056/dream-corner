@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1001,
+        "name": "Lenovo",
+        "price": 50000,
+        "img": "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1002,
+        "name": "Walton",
+        "price": 60000,
+        "img": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1003,
+        "name": "Lenovo",
+        "price": 45000,
+        "img": "https://images.pexels.com/photos/812264/pexels-photo-812264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1004,
+        "name": "Hp",
+        "price": 65000,
+        "img": "https://images.pexels.com/photos/1006293/pexels-photo-1006293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1005,
+        "name": "Mac",
+        "price": 90000,
+        "img": "https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1006,
+        "name": "node-Book",
+        "price": 85000,
+        "img": "https://images.pexels.com/photos/459653/pexels-photo-459653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1007,
+        "name": "Cool",
+        "price": 70000,
+        "img": "https://images.pexels.com/photos/1467277/pexels-photo-1467277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1008,
+        "name": "I-pad",
+        "price": 100000,
+        "img": "https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1009,
+        "name": "Sr",
+        "price": 90000,
+        "img": "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1010,
+        "name": "Lenovo",
+        "price": 60000,
+        "img": "https://images.pexels.com/photos/40185/mac-freelancer-macintosh-macbook-40185.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 1011,
+        "name": "Acer's",
+        "price": 42000,
+        "img": "https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 1012,
+        "name": "Lenovo",
+        "price": 50000,
+        "img": "https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+]

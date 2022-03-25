@@ -1,0 +1,8 @@
+.product{
+    width: 300px;
+    height: 350px;
+    border: 2px solid black;
+}
+.product-info{
+    padding: 25px;
+}
