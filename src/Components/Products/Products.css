@@ -20,3 +20,14 @@
     width: 50%;
     
 }
+@media only screen and (max-width:426px) {
+    .products-container{
+        grid-template-columns: 1fr;
+    }
+}
+/* @media only screen and (max-width:426) {
+    .selected-container{
+  display: flex;
+        flex-direction: column;
+    }
+} */

@@ -25,8 +25,8 @@ const Products = () => {
         else {
             alert('Please select different product')
         }
-
     }
+
     const chooseOne = () => {
         if (cart.length === 0) {
             return;
@@ -39,10 +39,10 @@ const Products = () => {
         else {
             return chooseOne()
         }
-
     }
+
     const chooseAgainBtn = () => {
-        console.log(chooseAgainBtn)
+        setCart([])
     }
 
     return (
@@ -70,6 +70,7 @@ const Products = () => {
             </div>
         </div>
     );
+
 };
 
 export default Products;
