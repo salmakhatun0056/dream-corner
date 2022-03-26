@@ -2,13 +2,9 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = ({ cart }) => {
-    console.log(cart)
-    const { name, price } = cart
-
-
+    const { name } = cart
     return (
-        <div className='cart'>
-
+        <div>
             <p> {name}</p>
         </div>
     );

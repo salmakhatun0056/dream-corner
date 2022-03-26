@@ -1,21 +1,48 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Good from '../Good/Good';
 import Product from '../Product/Product';
 import './Products.css'
 
 const Products = () => {
     const [products, setProducts] = useState([])
+    const [good, setGood] = useState([])
     const [cart, setCart] = useState([])
 
     useEffect(() => {
-        fetch('fackdata.json')
+        fetch('fakedata.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
 
     const clickHandler = (product) => {
-        const newCart = [...cart, product]
-        setCart(newCart)
+        const proCard = cart.filter(pro => pro.id === product.id)
+
+        if (proCard.length === 0) {
+            const newCart = [...cart, product]
+            setCart(newCart)
+        }
+        else {
+            alert('Please select different product')
+        }
+
+    }
+    const chooseOne = () => {
+        if (cart.length === 0) {
+            return;
+        }
+
+        let uniqNumber = Math.round(Math.random() * 10)
+        if (uniqNumber < cart.length) {
+            setGood(cart[uniqNumber])
+        }
+        else {
+            return chooseOne()
+        }
+
+    }
+    const chooseAgainBtn = () => {
+        console.log(chooseAgainBtn)
     }
 
     return (
@@ -30,13 +57,16 @@ const Products = () => {
                 }
             </div>
             <div className="selected-container">
-                <h3>Selected Clothes </h3>
-                {/* <Cart cart={cart}></Cart> */}
+                <h3>Selected Laptop </h3>
                 {
-                    cart.map(a => <Cart cart={a}></Cart>)
+                    cart.map(item =>
+                        <Cart cart={item}
+                            key={item.id}
+                        ></Cart>)
                 }
-                <button>Choose 1 For Me</button>
-                <button>Choose Again</button>
+                <button onClick={chooseOne}>Choose 1 For Me</button><br />
+                <button onClick={chooseAgainBtn}>Choose Again</button>
+                <Good good={good}></Good>
             </div>
         </div>
     );
