@@ -8,3 +8,8 @@
     gap: 15px;
     margin: 25px;
 }
+.selected-container{
+    background-color: rgb(253, 217, 150);
+    padding: 40px;
+ 
+}

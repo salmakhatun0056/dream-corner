@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Products.css'
 
@@ -13,7 +14,6 @@ const Products = () => {
     }, [])
 
     const clickHandler = (product) => {
-        console.log(product)
         const newCart = [...cart, product]
         setCart(newCart)
     }
@@ -30,8 +30,13 @@ const Products = () => {
                 }
             </div>
             <div className="selected-container">
-                <p>Selected Clothes </p>
-                <p>Selected Item:{cart.length}</p>
+                <h3>Selected Clothes </h3>
+                {/* <Cart cart={cart}></Cart> */}
+                {
+                    cart.map(a => <Cart cart={a}></Cart>)
+                }
+                <button>Choose 1 For Me</button>
+                <button>Choose Again</button>
             </div>
         </div>
     );
